@@ -1,0 +1,301 @@
+﻿*{
+    margin:0px;
+}
+body {
+    
+    
+}
+#header {
+    height :auto;
+    width:100%;
+    
+   
+}
+
+ h1{
+     text-align:center;
+     text-shadow:-2px -2px 2px red ;
+     padding:20px;
+ }
+ #menu{
+     height:30px;
+     width:100%;
+    background:rgb(255, 255, 255 , 0.5);
+
+ }
+
+
+
+.login {
+    /*height : 287px;
+ 	width:328px;*/
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    background-position: center;
+    box-shadow: 3px 3px 3px skyblue, -3px -3px 3px black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    left: 40%;
+    top: 12em;
+    background-color: white;
+}
+
+
+    .login:hover {
+        box-shadow: 4px 4px 4px black, -4px -4px 4px skyblue;
+        transition: all 0.6s ease-out;
+    }
+
+
+.container {
+    padding: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+    button:hover {
+        opacity: 0.8;
+        background-color: Black;
+    }
+
+/* footer  */
+
+.container1 {
+    width: 1350px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    padding: 70px 0;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0px auto;
+    background: rgba(0,0,0,0.5);
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 55px;
+}
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: white;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: red;
+        text-decoration: none;
+        font-weight: 300;
+        color: white;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+    .footer-col .social-links a {
+        display: inline-block;
+        /* height: 40px; */
+        /* width: 40px; */
+        margin: 0 10px 10px 0;
+        text-align: center;
+        /* line-height: 40px; */
+        border-radius: 50%;
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+.f1 {
+    width: 16px;
+    height: 16px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px red;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+/* Admin Panel*/
+
+#main {
+
+    width: 100%;
+    height:auto;
+    
+}
+
+.data {
+    width: 100%;
+    height: 750px;
+    border: 1px solid red;
+}
+
+
+/*Nav*/
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background: #37bc9b;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        /*float: left;*/
+        display: inline-block;
+    }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px 0 0;
+            /*float: left;*/
+            display: inline-block;
+        }
+
+li > a:after {
+    content: ' »';
+}
+/* Change this in order to change the Dropdown symbol */
+
+li > a:only-child:after {
+    content: '';
+}
+
+nav ul li a {
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+    nav ul li a:hover {
+        opacity: 0.5;
+    }
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #37bc9b;
+    float: left;
+}
+
+    nav ul li ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+nav ul li:hover ul {
+    display: block;
+}
+
+
+.abc {
+
+    width:auto;
+    height:auto;
+}
+
+#addC {
+    width: 500px;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #063539;
+}
+
+
+.c1 {
+    font-weight: 900;
+    color: white;
+    margin-top: 50px;
+    padding: 15px;
+}
+#show{
+width: 1024px;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #063539;
+    border: solid 2px black;
+}

@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="JScript.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div id ="name">
+    <div class ="head">
+        <div class="img1"><img src="assets/download.png" style="width:100%;height : 100%;" /> </div>
+        <div class ="d1">
+             GOOD LIFE PHARMACY 
+      </div>
+      
+     </div> 
+    <header>
+             
+                <div id = "search">    
+                   <div class ="sb">
+                 <asp:Button ID="Button1" CssClass="sb" runat="server" style="float:right" Text="Go"  Width="60px" 
+                           Height="50px" onclick="Button1_Click"></asp:Button>
+                    </div>
+                    <div >         
+                 <asp:TextBox ID="TextBox1" runat="server" placeholder="search"   Width="250px" Height="60px" style="float:right" ></asp:TextBox>
+                 </div>
+                 </div> 
+              <div style="clear:both;"></div>
+               <asp:ImageButton ID="ImageButton1" runat="server"  ImageUrl="assets/cart1.png" 
+                      Width="100px" Height="60px" style="float:right" PostBackUrl="~/cart.aspx" />         
+          
+         <nav><ul>
+             <li> <a href="home.aspx">HOME</a></li>
+             <li></li>
+       <asp:Repeater ID="Repeater1" runat="server" onitemcommand="Repeater1_ItemCommand">
+           <ItemTemplate>
+           <li>  <a href='ointment.aspx?cid=<%#Eval("c_ID")%>'><%# Eval("c_name") %></a></li>
+        </ItemTemplate>
+               </asp:Repeater>                 
+           
+             <li>  <a href="ContactUs.aspx">CONTACT US</a></li>
+         
+                 </ul>
+        </nav>
+     </header>
+   
+    
+     <div id="name">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div style="clear:both;"></div>
+    <footer class="footer">
+  	 <div class="container1">
+  	 	<div class="row">
+  	 		
+  	 		<div class="footer-col">
+  	 	
+  	 			<h4>About Us</h4>
+  	 				<asp:Repeater ID="Repeater2" runat="server">
+  	 		<ItemTemplate>
+  	 			<%#Eval("desc")%>
+  	 			</ItemTemplate>
+  	 		</asp:Repeater>
+  	 		</div>
+  	 		
+  	 		<div class="footer-col">
+  	 			<h4>Quick Link</h4>
+  	 			<ul>
+  	 				
+  	 				<li><a href="contactUS.aspx">Contact Us</a></li>
+  	 				<li><a href="privacypolicies.aspx">Privacy Policies</a></li>
+  	 			
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/"><i class="fab fa-facebook-f f1" ></i></a>
+  	 				<a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter f1"  ></i></a>
+  	 				<a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram f1" ></i></a>
+  	 				<a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiprpmsldL9AhU3nUsFHZ3jDPoYABAAGgJzZg&ohost=www.google.com&cid=CAESa-D28XvtZW5BVeLBN5TO8DBcC_BWSYCvJ8Dx865TFc-XXI5Nn21DLHuHY4Hv1x_4p2CXyipl2jpK7CtsVy_YObVo06GBkMk3u1xsyu7asRppVt26jFQDlVQBbAgrDqOjcEDt64GhURbOjjS3&sig=AOD64_2ZeGPo6DwlSepyYUyMW5gKSFkT_g&q&adurl&ved=2ahUKEwiYwJOsldL9AhVCxDgGHYCbAk8Q0Qx6BAgFEAE"><i class="fab fa-linkedin-in f1" ></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+           <p style=" padding:15px; text-align:right; color:white"> Design & Develop By AFY Group & Sons | 2022 &copy; * All Righrs Are Rescerved..! </p>
+  	 </div>
+    </footer>
+    </div>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="Style1.css" rel="stylesheet" />
+
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="header">
+                <h1>WELCOME TO ADMIN PANEL </h1>
+            </div>
+            
+            <nav>
+  <ul>
+      
+      <li><a href="#">About Us</a>
+      <ul>
+        <li><a href="AddAboutus.aspx">Add About</a></li>
+        <li><a href="ViewAboutUs.aspx">View About</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Why Chose Us</a>
+      <ul>
+        <li><a href="AddWhyUs.aspx">Add Chose Us</a></li>
+        <li><a href="viewWhyUs.aspx">View Chose Us</a></li>
+      
+      </ul>
+    </li>
+    <li><a href=#>Category</a>
+        <ul>
+        <li><a href="addCAT.aspx">Add Category</a></li>
+        <li><a href="viewCategory.aspx">View Category</a></li>
+      </ul>
+    </li>
+    <li><a href=#>FAQ</a>
+        <ul>
+        <li><a href="viewFAQ.aspx">View FAQ </a></li>
+       <li><a href="AddFAQ.aspx">Add FAQ</a></li>
+      </ul>
+    </li>
+     <li><a href=#>Contact</a>
+        <ul>
+        <li><a href="viewContact.aspx">View Contact</a></li>
+               <li><a href="AddContact.aspx">AddContact.aspx</a></li>
+      </ul>
+    </li>
+       <li><a href=#>Product</a>
+        <ul>
+        <li><a href="AddProduct.aspx">Add Product</a></li>
+               <li><a href="ViewProduct.aspx">View Products</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            <div id="main">
+                 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+                  
+         <%--   </div>
+            <footer class="footer">
+  	 <div class="container1">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f f1" ></i></a>
+  	 				<a href="#"><i class="fab fa-twitter f1"  ></i></a>
+  	 				<a href="#"><i class="fab fa-instagram f1" ></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in f1" ></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+           <p style=" padding:15px; text-align:right; color:white"> Design & Develop By AFY Group & Sons | 2022 &copy; * All Righrs Are Rescerved..! </p>
+  	 </div>
+  </footer>
+     
+            
+        </div>--%>
+    </form>
+</body>
+</html>

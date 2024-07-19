@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GLP1_project", "D:\Desktop\kaam\GLP1_project\", "{C92CCE58-6490-486D-922C-0101423C5BA4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/GLP1_project"
+		Debug.AspNetCompiler.PhysicalPath = "D:\Desktop\kaam\GLP1_project\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\GLP1_project\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/GLP1_project"
+		Release.AspNetCompiler.PhysicalPath = "D:\Desktop\kaam\GLP1_project\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\GLP1_project\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59481"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C92CCE58-6490-486D-922C-0101423C5BA4}.Debug|.NET.ActiveCfg = Debug|.NET
+		{C92CCE58-6490-486D-922C-0101423C5BA4}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
